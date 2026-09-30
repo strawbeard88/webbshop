@@ -32,3 +32,24 @@ export async function getProduct(id: number): Promise<Product> {
 
     return data;
 }
+
+// Post new order
+export async function createOrder(order: Order): Promise<Order> {
+    const response = await fetch(`${APIUrl}/orders`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(order)
+    });
+
+    console.log("Status:", response.status);
+
+    if (!response.ok) {
+        throw new Error("Failed to create order");
+    }
+
+    const data = await response.json();
+
+    return data;
+}
