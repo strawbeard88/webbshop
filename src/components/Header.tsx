@@ -6,7 +6,7 @@ export default function Header() {
     const cart = <div className="header-cart">Cart</div>;
 
     return (
-       <header>
+       <header className="header">
            {title}
            {cart}
        </header>
