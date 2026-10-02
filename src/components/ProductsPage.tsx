@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Product } from '../types/types';
 import { getProducts } from '../api/api';
+import '../styling/productsPage.css';
 
 export function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -17,7 +18,7 @@ export function ProductsPage() {
         {products.map((product) => (
           <div key={product.id} className="product-item">
             <h3>{product.title}</h3>
-            <p>${product.price}</p>
+            <p>${product.price}</p>            
           </div>
         ))}
       </div>
