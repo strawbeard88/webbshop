@@ -4,7 +4,6 @@ import type { Product, CartItem } from "../types/types";
 type CartContextValue = {
     cart: CartItem[];
     addToCart: (product: Product) => void;
-
 };
 
 type CartProviderProps = {
