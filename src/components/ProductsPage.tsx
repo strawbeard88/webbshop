@@ -12,7 +12,7 @@ export function ProductsPage() {
       throw new Error("ProductsPage måste ligga inuti CartProvider");
   }
 
-  const { addToCart } = cartContext;
+  const { addToCart, removeFromCart } = cartContext;
 
   useEffect(() => {
       getProducts()
@@ -27,9 +27,8 @@ export function ProductsPage() {
                   <div key={product.id} className="product-item">
                       <h3>{product.title}</h3>
                       <p>${product.price}</p>
-                      <button onClick={() => addToCart(product)}>
-                          Add to Cart
-                      </button>
+                      <button onClick={() => addToCart(product)}> Add to Cart </button>
+                      <button onClick={() => removeFromCart(product.id)}> Remove from Cart </button>
                   </div>
               ))}
           </div>

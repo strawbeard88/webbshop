@@ -4,6 +4,7 @@ import type { Product, CartItem } from "../types/types";
 type CartContextValue = {
     cart: CartItem[];
     addToCart: (product: Product) => void;
+    removeFromCart: (productId: string) => void;
 };
 
 type CartProviderProps = {
@@ -43,12 +44,15 @@ const CartProvider = ({ children }: CartProviderProps) => {
                 },
             ];
         });
-        //TODO: Ta bort detta
-        console.log("Cart updated:", cart);
+    };
+
+    // Function to remove a product from the cart
+    const removeFromCart = (productId: string) => {
+        setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
     };
 
     return (
-        <CartContext.Provider value={{ cart, addToCart}}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart}}>
             {children}
         </CartContext.Provider>
     );
