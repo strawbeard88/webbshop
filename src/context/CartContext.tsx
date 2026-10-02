@@ -1,35 +1,54 @@
-import React, { createContext, useContext, useState } from "react";
-import type { Product, CartItem } from '../types/types';
+import React, { createContext, useState } from "react";
+import type { Product, CartItem } from "../types/types";
 
 type CartContextValue = {
     cart: CartItem[];
     addToCart: (product: Product) => void;
-    decreaseQuantity: (product: Product) => void;
-}
 
+};
 
-const CartContext = createContext<CartContextValue | null>(null);
+type CartProviderProps = {
+    children: React.ReactNode;
+};
 
-const [cart, setCart] = useState<CartItem[]>([]);
+export const CartContext = createContext<CartContextValue | null>(null);
 
+const CartProvider = ({ children }: CartProviderProps) => {
+    const [cart, setCart] = useState<CartItem[]>([]);
 
-//Add to cart function
-const addToCart = (product: Product) => {
-    setCart((prevCart) => {
-        const existingItem = prevCart.find(item => item.id === product.id);
+    const addToCart = (product: Product) => {
+        setCart((prevCart) => {
+            const existingItem = prevCart.find(
+                (item) => item.id === product.id
+            );
 
-        if (existingItem) {
-            return prevCart.map(item =>
-                item.id === product.id
-                    ? {
-                        ...item,
-                        quantity: item.quantity + 1
-                    }
-                    : item
-            )
-        }
-        return [...prevCart, { id: product.id, 
-            product,
-            quantity: 1 }];
-    } )
-}
+            if (existingItem) {
+                return prevCart.map((item) =>
+                    item.id === product.id
+                        ? {
+                              ...item,
+                              quantity: item.quantity + 1,
+                          }
+                        : item
+                );
+            }
+
+            return [
+                ...prevCart,
+                {
+                    id: product.id,
+                    product,
+                    quantity: 1,
+                },
+            ];
+        });
+    };
+
+    return (
+        <CartContext.Provider value={{ cart, addToCart}}>
+            {children}
+        </CartContext.Provider>
+    );
+};
+
+export default CartProvider;

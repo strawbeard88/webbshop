@@ -1,0 +1,28 @@
+import type { Product } from "../types/types"; 
+import "./productCard.css"; 
+
+interface ProductCardProps {
+    product: Product;
+    onAddToCart: (product: Product) => void;
+}
+
+function ProductCard({ product, onAddToCart }: ProductCardProps) {
+    return (
+        <article className="product-card">
+            <h2 className="product-card__title">
+                {product.title}
+            </h2>
+            <div className="product-card__image-container">
+                <img className="product-card__image" src={product.image} alt={product.title} />
+            </div>
+            <p className="product-card__stock">
+                Lagersaldo: {product.stock}
+            </p>
+            <button className="product-card__button" onClick={() => onAddToCart(product)} disabled={product.stock <= 0} >
+                {product.stock > 0 ? "Köp" : "Slut i lager"}
+            </button>
+        </article>
+    );
+}
+
+export default ProductCard;
