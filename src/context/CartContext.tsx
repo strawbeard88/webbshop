@@ -15,6 +15,8 @@ export const CartContext = createContext<CartContextValue | null>(null);
 const CartProvider = ({ children }: CartProviderProps) => {
     const [cart, setCart] = useState<CartItem[]>([]);
 
+
+    // Function to add a product to the cart
     const addToCart = (product: Product) => {
         setCart((prevCart) => {
             const existingItem = prevCart.find(
@@ -41,6 +43,8 @@ const CartProvider = ({ children }: CartProviderProps) => {
                 },
             ];
         });
+        //TODO: Ta bort detta
+        console.log("Cart updated:", cart);
     };
 
     return (
