@@ -3,6 +3,7 @@ import type { Product, CartItem } from "../types/types";
 
 type CartContextValue = {
     cart: CartItem[];
+    cartItemCount: number;
     addToCart: (product: Product) => void;
     removeFromCart: (productId: string) => void;
 };
@@ -16,6 +17,12 @@ export const CartContext = createContext<CartContextValue | null>(null);
 const CartProvider = ({ children }: CartProviderProps) => {
     const [cart, setCart] = useState<CartItem[]>([]);
 
+    
+    // Update cart item count whenever the cart changes
+    const cartItemCount = cart.reduce(
+        (total, item) => total + item.quantity,
+        0
+    );
 
     // Function to add a product to the cart
     const addToCart = (product: Product) => {
@@ -52,7 +59,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
     };
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart}}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, cartItemCount }}>
             {children}
         </CartContext.Provider>
     );
