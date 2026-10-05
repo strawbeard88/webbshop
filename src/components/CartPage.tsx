@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 import CartProductList from './CartProductList';
+import { formatPrice, getUnitPrice } from '../utils/pricing';
 
 
 export default function CartPage() { 
@@ -14,7 +15,7 @@ export default function CartPage() {
 
     const { cart, addToCart, removeOneFromCart, removeFromCart } = cartContext;
     const totalPrice = cart.reduce(
-        (total, item) => total + item.product.price * item.quantity,
+        (total, item) => total + getUnitPrice(item.product) * item.quantity,
         0
     );
 
@@ -33,7 +34,7 @@ export default function CartPage() {
                 />
             )}
 
-            <p className="cart-total-price">Totalpris: ${totalPrice}</p>
+            <p className="cart-total-price">Totalpris: {formatPrice(totalPrice)}</p>
 
             <div className="cart-actions">
                 <Link to="/" className="cart-link-button">

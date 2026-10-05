@@ -44,3 +44,17 @@
     text-decoration: none;
     color: inherit;
 }
+
+.cart-row-price {
+    margin: 0;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.price-sale {
+    color: #c21807;
+    font-weight: 700;
+}

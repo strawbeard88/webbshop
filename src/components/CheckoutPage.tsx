@@ -11,6 +11,7 @@ import ShippingMethodForm from './checkout/ShippingMethodForm';
 import PaymentMethodForm from './checkout/PaymentMethodForm';
 import '../styling/cartpage.css';
 import '../styling/checkoutPage.css';
+import { formatPrice, getUnitPrice } from '../utils/pricing';
 
 export default function CheckoutPage() {
     const cartContext = useContext(CartContext);
@@ -37,7 +38,7 @@ export default function CheckoutPage() {
     const totalPrice = useMemo(
         () =>
             cart.reduce(
-                (total, item) => total + item.product.price * item.quantity,
+                (total, item) => total + getUnitPrice(item.product) * item.quantity,
                 0
             ),
         [cart]
@@ -64,7 +65,7 @@ export default function CheckoutPage() {
                 productId: item.product.id,
                 title: item.product.title,
                 quantity: item.quantity,
-                price: item.product.price,
+                price: getUnitPrice(item.product),
             })),
             customer: {
                 name: customerInformation.name,
@@ -103,7 +104,9 @@ export default function CheckoutPage() {
             ) : (
                 <>
                     <CartProductList cart={cart} showActions={false} />
-                    <p className="cart-total-price">Totalpris: ${totalPrice}</p>
+                    <p className="cart-total-price">
+                        Totalpris: {formatPrice(totalPrice)}
+                    </p>
 
                     <div className="checkout-forms">
                         <CustomerInformationForm

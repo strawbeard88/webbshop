@@ -1,5 +1,6 @@
 import type { Product } from '../types/types';
 import '../styling/productInformation.css';
+import { formatPrice, getUnitPrice } from '../utils/pricing';
 
 type ProductInformationProps = {
     product: Product;
@@ -12,6 +13,8 @@ export default function ProductInformation({
     onClose,
     onBuyNow,
 }: ProductInformationProps) {
+    const discountedPrice = getUnitPrice(product);
+
     return (
         <div
             className="product-information-overlay"
@@ -38,7 +41,20 @@ export default function ProductInformation({
                     alt={product.title}
                 />
                 <h2 className="product-information__title">{product.title}</h2>
-                <p className="product-information__price">{product.price} kr</p>
+                {product.onSale ? (
+                    <p className="product-information__price">
+                        <span className="price-original">
+                            {formatPrice(product.price)}
+                        </span>{' '}
+                        <span className="price-sale">
+                            {formatPrice(discountedPrice)}
+                        </span>
+                    </p>
+                ) : (
+                    <p className="product-information__price">
+                        {formatPrice(product.price)}
+                    </p>
+                )}
                 <p className="product-information__stock">
                     Lagersaldo: {product.stock}
                 </p>

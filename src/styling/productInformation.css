@@ -50,6 +50,16 @@
     margin: 0;
 }
 
+.price-original {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.price-sale {
+    color: #c21807;
+    font-weight: 700;
+}
+
 .product-information__buy-button {
     width: 100%;
     padding: 10px 14px;

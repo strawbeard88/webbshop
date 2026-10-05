@@ -33,6 +33,16 @@
     font-weight: 500;
 }
 
+.price-original {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.price-sale {
+    color: #c21807;
+    font-weight: 700;
+}
+
 .product-card__image-container {
     width: 100%;
     aspect-ratio: 1 / 1;

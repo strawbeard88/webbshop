@@ -1,4 +1,5 @@
 import type { CartItem, Product } from '../types/types';
+import { formatPrice, getUnitPrice } from '../utils/pricing';
 
 type CartProductListProps = {
     cart: CartItem[];
@@ -31,7 +32,21 @@ export default function CartProductList({
                         alt={item.product.title}
                     />
                     <p>Antal: {item.quantity}</p>
-                    <p>Pris: ${item.product.price}</p>
+                    {item.product.onSale ? (
+                        <p className="cart-row-price">
+                            Pris:{' '}
+                            <span className="price-original">
+                                {formatPrice(item.product.price)}
+                            </span>{' '}
+                            <span className="price-sale">
+                                {formatPrice(getUnitPrice(item.product))}
+                            </span>
+                        </p>
+                    ) : (
+                        <p className="cart-row-price">
+                            Pris: {formatPrice(item.product.price)}
+                        </p>
+                    )}
                     {showActions ? (
                         <>
                             <button onClick={() => addToCart!(item.product)}>+</button>

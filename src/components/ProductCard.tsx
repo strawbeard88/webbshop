@@ -1,5 +1,6 @@
 import type { Product } from "../types/types"; 
 import "../styling/productCard.css"; 
+import { formatPrice, getUnitPrice } from "../utils/pricing";
 
 interface ProductCardProps {
     product: Product;
@@ -12,6 +13,8 @@ function ProductCard({
     onAddToCart,
     onOpenInformation,
 }: ProductCardProps) {
+    const discountedPrice = getUnitPrice(product);
+
     return (
         <article className="product-card">
             <button
@@ -27,7 +30,20 @@ function ProductCard({
                     />
                 </div>
                 <h2 className="product-card__title">{product.title}</h2>
-                <p className="product-card__price">{product.price} kr</p>
+                {product.onSale ? (
+                    <p className="product-card__price">
+                        <span className="price-original">
+                            {formatPrice(product.price)}
+                        </span>{' '}
+                        <span className="price-sale">
+                            {formatPrice(discountedPrice)}
+                        </span>
+                    </p>
+                ) : (
+                    <p className="product-card__price">
+                        {formatPrice(product.price)}
+                    </p>
+                )}
             </button>
             <button
                 type="button"

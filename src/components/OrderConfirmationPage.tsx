@@ -3,6 +3,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { getOrder } from '../api/api';
 import type { Order } from '../types/types';
 import '../styling/orderConfirmationPage.css';
+import { formatPrice } from '../utils/pricing';
 
 type LocationState = {
     order?: Order;
@@ -87,13 +88,13 @@ export default function OrderConfirmationPage() {
             <ul className="order-items">
                 {order.items.map((item) => (
                     <li key={item.productId}>
-                        {item.title} - {item.quantity} st - ${item.price} / st
+                        {item.title} - {item.quantity} st - {formatPrice(item.price)} / st
                     </li>
                 ))}
             </ul>
 
             <p>
-                <strong>Total kostnad:</strong> ${totalPrice}
+                <strong>Total kostnad:</strong> {formatPrice(totalPrice)}
             </p>
 
             <Link to="/" className="cart-link-button">
