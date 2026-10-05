@@ -16,6 +16,12 @@
     font-weight: 600;
 }
 
+.product-card__price {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .product-card__image-container {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -29,11 +35,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.product-card__stock {
-    margin: 0;
-    font-size: 0.95rem;
 }
 
 .product-card__button {

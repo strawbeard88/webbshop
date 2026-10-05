@@ -92,6 +92,25 @@
       "payment": "Swish",
       "date": "2026-10-05T10:08:48.804Z",
       "id": "-Hm1aVmfq-E"
+    },
+    {
+      "orderNumber": "ORD-1791196645316",
+      "items": [
+        {
+          "productId": "1",
+          "title": "Bilbo, Luckwearer",
+          "quantity": 4,
+          "price": 199
+        }
+      ],
+      "customer": {
+        "name": "asdasd",
+        "address": "asdasdasd"
+      },
+      "shipping": "DHL",
+      "payment": "Klarna",
+      "date": "2026-10-05T10:37:25.316Z",
+      "id": "_iPzPHcp6PI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
