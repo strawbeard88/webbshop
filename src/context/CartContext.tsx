@@ -19,10 +19,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
 
     
     // Update cart item count whenever the cart changes
-    const cartItemCount = cart.reduce(
-        (total, item) => total + item.quantity,
-        0
-    );
+    const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
     // Function to add a product to the cart
     const addToCart = (product: Product) => {
@@ -54,6 +51,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
     };
 
     // Function to remove a product from the cart
+    // TODO: Gör så det bara försvinner 1 produkt
     const removeFromCart = (productId: string) => {
         setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
     };
