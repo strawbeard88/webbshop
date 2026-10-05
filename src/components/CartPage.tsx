@@ -2,6 +2,7 @@ import '../styling/cartpage.css';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
+import CartProductList from './CartProductList';
 
 
 export default function CartPage() { 
@@ -24,24 +25,12 @@ export default function CartPage() {
             {cart.length === 0 ? (
                 <p>Din kundvagn är tom.</p>
             ) : (
-                <div className="cart-list">
-                    {cart.map((item) => (
-                        <div key={item.id} className="cart-row">
-                            <img
-                                className="cart-row-image"
-                                src={item.product.image}
-                                alt={item.product.title}
-                            />
-                            <p>Antal: {item.quantity}</p>
-                            <p>Pris: ${item.product.price}</p>
-                            <button onClick={() => addToCart(item.product)}>+</button>
-                            <button onClick={() => removeOneFromCart(item.id)}>-</button>
-                            <button onClick={() => removeFromCart(item.id)}>
-                                Radera raden
-                            </button>
-                        </div>
-                    ))}
-                </div>
+                <CartProductList
+                    cart={cart}
+                    addToCart={addToCart}
+                    removeOneFromCart={removeOneFromCart}
+                    removeFromCart={removeFromCart}
+                />
             )}
 
             <p className="cart-total-price">Totalpris: ${totalPrice}</p>
@@ -50,7 +39,9 @@ export default function CartPage() {
                 <Link to="/" className="cart-link-button">
                     Shoppa mer
                 </Link>
-                <button type="button">Checka ut</button>
+                <Link to="/checkout" className="cart-link-button">
+                    Checka ut
+                </Link>
             </div>
         </section>
     );

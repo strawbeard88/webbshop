@@ -1,4 +1,4 @@
-import type { Product, Order } from '../types/types';
+import type { Product, Order, NewOrder } from '../types/types';
 
 const APIUrl = 'http://localhost:3001';
 
@@ -18,7 +18,7 @@ export async function getProducts(): Promise<Product[]> {
 }
 
 // Getting a single product by ID
-export async function getProduct(id: number): Promise<Product> {
+export async function getProduct(id: string): Promise<Product> {
     const response = await fetch(`${APIUrl}/products/${id}`);
 
     //TODO: Tabort denna logg
@@ -34,7 +34,7 @@ export async function getProduct(id: number): Promise<Product> {
 }
 
 // Post new order
-export async function createOrder(order: Order): Promise<Order> {
+export async function createOrder(order: NewOrder): Promise<Order> {
     const response = await fetch(`${APIUrl}/orders`, {
         method: 'POST',
         headers: {
@@ -47,6 +47,18 @@ export async function createOrder(order: Order): Promise<Order> {
 
     if (!response.ok) {
         throw new Error("Failed to create order");
+    }
+
+    const data = await response.json();
+
+    return data;
+}
+
+export async function getOrder(id: string): Promise<Order> {
+    const response = await fetch(`${APIUrl}/orders/${id}`);
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch order');
     }
 
     const data = await response.json();

@@ -1,0 +1,33 @@
+.checkout-forms {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkout-step {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkout-step h2 {
+    margin: 0 0 8px;
+}
+
+.checkout-error {
+    margin: 0;
+    color: #b00020;
+}
+
+.checkout-submit-error {
+    margin-top: 12px;
+}
+
+.checkout-pay-button {
+    margin-top: 16px;
+    padding: 10px 14px;
+}

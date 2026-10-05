@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ProductsPage } from "./components/ProductsPage";
 import CartPage from "./components/CartPage";
+import CheckoutPage from "./components/CheckoutPage";
+import OrderConfirmationPage from "./components/OrderConfirmationPage";
 
 function App() {
     return (
@@ -16,6 +18,11 @@ function App() {
                 <Routes>
                     <Route path="/" element={<ProductsPage />} />
                     <Route path="/cart" element={<CartPage />} />
+                    <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route
+                        path="/order-confirmation/:orderId"
+                        element={<OrderConfirmationPage />}
+                    />
                 </Routes>
                 <Footer />
             </CartProvider>

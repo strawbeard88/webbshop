@@ -16,6 +16,7 @@ export interface CartItem {
 
 export interface OrderItem {
     productId: string;
+    title: string;
     quantity: number;
     price: number;
 }
@@ -32,3 +33,5 @@ export interface Order {
     payment: string;
     date: string;
 }
+
+export type NewOrder = Omit<Order, 'id'>;

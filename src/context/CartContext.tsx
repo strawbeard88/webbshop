@@ -7,6 +7,7 @@ type CartContextValue = {
     addToCart: (product: Product) => void;
     removeOneFromCart: (productId: string) => void;
     removeFromCart: (productId: string) => void;
+    clearCart: () => void;
 };
 
 type CartProviderProps = {
@@ -66,6 +67,10 @@ const CartProvider = ({ children }: CartProviderProps) => {
         setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
     };
 
+    const clearCart = () => {
+        setCart([]);
+    };
+
     return (
         <CartContext.Provider
             value={{
@@ -73,6 +78,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
                 addToCart,
                 removeOneFromCart,
                 removeFromCart,
+                clearCart,
                 cartItemCount,
             }}
         >
