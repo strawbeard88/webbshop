@@ -5,6 +5,7 @@ type CartContextValue = {
     cart: CartItem[];
     cartItemCount: number;
     addToCart: (product: Product) => void;
+    removeOneFromCart: (productId: string) => void;
     removeFromCart: (productId: string) => void;
 };
 
@@ -18,10 +19,8 @@ const CartProvider = ({ children }: CartProviderProps) => {
     const [cart, setCart] = useState<CartItem[]>([]);
 
     
-    // Update cart item count whenever the cart changes
     const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
-    // Function to add a product to the cart
     const addToCart = (product: Product) => {
         setCart((prevCart) => {
             const existingItem = prevCart.find(
@@ -50,14 +49,33 @@ const CartProvider = ({ children }: CartProviderProps) => {
         });
     };
 
-    // Function to remove a product from the cart
-    // TODO: Gör så det bara försvinner 1 produkt
+    const removeOneFromCart = (productId: string) => {
+        setCart((prevCart) =>
+            prevCart
+                .map((item) =>
+                    item.id === productId
+                        ? { ...item, quantity: item.quantity - 1 }
+                        : item
+                )
+                .filter((item) => item.quantity > 0)
+        );
+    };
+
+
     const removeFromCart = (productId: string) => {
         setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
     };
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, cartItemCount }}>
+        <CartContext.Provider
+            value={{
+                cart,
+                addToCart,
+                removeOneFromCart,
+                removeFromCart,
+                cartItemCount,
+            }}
+        >
             {children}
         </CartContext.Provider>
     );
