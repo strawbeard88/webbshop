@@ -2,6 +2,17 @@ import type { Product, Order, NewOrder } from '../types/types';
 
 const APIUrl = 'http://localhost:3001';
 
+function normalizeImagePath(image: string): string {
+    const hasExtension = /\.[a-z0-9]+$/i.test(image);
+    const normalizedPath = hasExtension ? image : `${image}.webp`;
+
+    if (normalizedPath.startsWith('/')) {
+        return normalizedPath;
+    }
+
+    return `/${normalizedPath}`;
+}
+
 // Getting all products in array
 export async function getProducts(): Promise<Product[]> {
     const response = await fetch(`${APIUrl}/products`);
@@ -14,7 +25,10 @@ export async function getProducts(): Promise<Product[]> {
 
     const data = await response.json();
 
-    return data;
+    return (data as Product[]).map((product) => ({
+        ...product,
+        image: normalizeImagePath(product.image),
+    }));
 }
 
 // Getting a single product by ID
@@ -30,7 +44,10 @@ export async function getProduct(id: string): Promise<Product> {
 
     const data = await response.json();
 
-    return data;
+    return {
+        ...(data as Product),
+        image: normalizeImagePath((data as Product).image),
+    };
 }
 
 // Post new order
