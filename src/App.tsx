@@ -5,16 +5,19 @@ import Footer from "./components/Footer";
 import { ProductsPage } from "./components/ProductsPage";
 import CartProvider from "./context/CartContext";
 import CartPage from "./components/CartPage";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
-            <CartProvider>
-                <Header />
-                <ProductsPage />
-                <CartPage />
-                <Footer />
-            </CartProvider>
+            <BrowserRouter>
+                <CartProvider>
+                    <Header />
+                    <ProductsPage />
+                    <CartPage />
+                    <Footer />
+                </CartProvider>
+            </BrowserRouter>
         </div>
     );
 }
