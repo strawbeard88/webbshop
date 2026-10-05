@@ -10,6 +10,17 @@
     gap: 12px;
 }
 
+.product-card__details-trigger {
+    border: none;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .product-card__title {
     margin: 0;
     font-size: 1.25rem;

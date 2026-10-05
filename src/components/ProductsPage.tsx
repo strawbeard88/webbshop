@@ -4,9 +4,11 @@ import { getProducts } from '../api/api';
 import '../styling/productsPage.css';
 import { CartContext } from '../context/CartContext';
 import ProductCard from './ProductCard';
+import ProductInformation from './ProductInformation';
 
 export function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const cartContext = useContext(CartContext);
 
   if (!cartContext) {
@@ -14,6 +16,11 @@ export function ProductsPage() {
   }
 
   const { addToCart } = cartContext;
+
+  const handleBuyNow = (product: Product) => {
+      addToCart(product);
+      setSelectedProduct(null);
+  };
 
   useEffect(() => {
       getProducts()
@@ -29,9 +36,17 @@ export function ProductsPage() {
                       key={product.id}
                       product={product}
                       onAddToCart={addToCart}
+                      onOpenInformation={setSelectedProduct}
                   />
               ))}
           </div>
+          {selectedProduct ? (
+              <ProductInformation
+                  product={selectedProduct}
+                  onClose={() => setSelectedProduct(null)}
+                  onBuyNow={handleBuyNow}
+              />
+          ) : null}
       </div>
   );
 }
