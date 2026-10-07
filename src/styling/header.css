@@ -1,7 +1,56 @@
-.header{
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
+    padding: 14px 24px;
+    background: linear-gradient(180deg, #17181d 0%, #131419 100%);
+    border-bottom: 1px solid #2a2c33;
+}
+
+.header-title {
+    color: #f5f6fa;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    font-size: 1.3rem;
+}
+
+.header-title:hover {
+    color: #f86f4d;
+}
+
+.header-cart-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cart {
+    text-decoration: none;
+    font-size: 1.7rem;
+    line-height: 1;
+    display: inline-flex;
+}
+
+.header-cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    min-width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0 5px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: #e5482e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }

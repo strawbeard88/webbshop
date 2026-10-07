@@ -1,6 +1,17 @@
-import type { Product, Order } from '../types/types';
+import type { Product, Order, NewOrder } from '../types/types';
 
 const APIUrl = 'http://localhost:3001';
+
+function normalizeImagePath(image: string): string {
+    const hasExtension = /\.[a-z0-9]+$/i.test(image);
+    const normalizedPath = hasExtension ? image : `${image}.webp`;
+
+    if (normalizedPath.startsWith('/')) {
+        return normalizedPath;
+    }
+
+    return `/${normalizedPath}`;
+}
 
 // Getting all products in array
 export async function getProducts(): Promise<Product[]> {
@@ -14,11 +25,14 @@ export async function getProducts(): Promise<Product[]> {
 
     const data = await response.json();
 
-    return data;
+    return (data as Product[]).map((product) => ({
+        ...product,
+        image: normalizeImagePath(product.image),
+    }));
 }
 
 // Getting a single product by ID
-export async function getProduct(id: number): Promise<Product> {
+export async function getProduct(id: string): Promise<Product> {
     const response = await fetch(`${APIUrl}/products/${id}`);
 
     //TODO: Tabort denna logg
@@ -30,11 +44,14 @@ export async function getProduct(id: number): Promise<Product> {
 
     const data = await response.json();
 
-    return data;
+    return {
+        ...(data as Product),
+        image: normalizeImagePath((data as Product).image),
+    };
 }
 
 // Post new order
-export async function createOrder(order: Order): Promise<Order> {
+export async function createOrder(order: NewOrder): Promise<Order> {
     const response = await fetch(`${APIUrl}/orders`, {
         method: 'POST',
         headers: {
@@ -47,6 +64,18 @@ export async function createOrder(order: Order): Promise<Order> {
 
     if (!response.ok) {
         throw new Error("Failed to create order");
+    }
+
+    const data = await response.json();
+
+    return data;
+}
+
+export async function getOrder(id: string): Promise<Order> {
+    const response = await fetch(`${APIUrl}/orders/${id}`);
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch order');
     }
 
     const data = await response.json();

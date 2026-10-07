@@ -9,12 +9,14 @@ export interface Product {
 }
 
 export interface CartItem {
+    id: string;
     product: Product;
     quantity: number;
 }
 
 export interface OrderItem {
     productId: string;
+    title: string;
     quantity: number;
     price: number;
 }
@@ -31,3 +33,5 @@ export interface Order {
     payment: string;
     date: string;
 }
+
+export type NewOrder = Omit<Order, 'id'>;

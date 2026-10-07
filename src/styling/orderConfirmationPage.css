@@ -1,0 +1,11 @@
+.order-confirmation-page {
+    padding: 20px;
+    background: #0f1116;
+    min-height: calc(100vh - 140px);
+    color: #eef1f6;
+}
+
+.order-items {
+    margin: 0 0 16px;
+    padding-left: 20px;
+}
