@@ -1,729 +1,1073 @@
 {
   "products": [
     {
-      "id": 2,
+      "id": "2",
       "title": "Savannah Lions",
-      "price": 75.80,
-      "categories": ["White", "Creature"],
+      "price": 75.8,
+      "categories": [
+        "White",
+        "Creature"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-39-savannah-lions.webp",
       "stock": 24
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "White Knight",
       "price": 13.25,
-      "categories": ["White", "Creature", "First Strike", "Protection"],
+      "categories": [
+        "White",
+        "Creature",
+        "First Strike",
+        "Protection"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-44-white-knight.webp",
       "stock": 31
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Serra Angel",
       "price": 46.96,
-      "categories": ["White", "Creature", "Flying", "Vigilance"],
+      "categories": [
+        "White",
+        "Creature",
+        "Flying",
+        "Vigilance"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-40-serra-angel.webp",
       "stock": 12
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Armageddon",
       "price": 161.84,
-      "categories": ["White", "Sorcery", "Land Destruction"],
+      "categories": [
+        "White",
+        "Sorcery",
+        "Land Destruction"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-2-armageddon.webp",
       "stock": 8
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Wrath of God",
       "price": 131.11,
-      "categories": ["White", "Sorcery", "Board Wipe"],
+      "categories": [
+        "White",
+        "Sorcery",
+        "Board Wipe"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-46-wrath-of-god.webp",
       "stock": 10
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Resurrection",
       "price": 4.42,
-      "categories": ["White", "Sorcery", "Recursion"],
+      "categories": [
+        "White",
+        "Sorcery",
+        "Recursion"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-34-resurrection.webp",
       "stock": 27
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Disenchant",
       "price": 3.01,
-      "categories": ["White", "Instant", "Artifact Hate", "Enchantment Hate"],
+      "categories": [
+        "White",
+        "Instant",
+        "Artifact Hate",
+        "Enchantment Hate"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-17-disenchant.webp",
       "stock": 35
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Swords to Plowshares",
       "price": 78.18,
-      "categories": ["White", "Instant", "Removal"],
+      "categories": [
+        "White",
+        "Instant",
+        "Removal"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-41-swords-to-plowshares.webp",
       "stock": 14
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Death Ward",
       "price": 2.01,
-      "categories": ["White", "Instant", "Regeneration"],
+      "categories": [
+        "White",
+        "Instant",
+        "Regeneration"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-16-death-ward.webp",
       "stock": 42
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Crusade",
       "price": 29.82,
-      "categories": ["White", "Enchantment", "Lord"],
+      "categories": [
+        "White",
+        "Enchantment",
+        "Lord"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-15-crusade.webp",
       "stock": 16
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Island Sanctuary",
       "price": 38.94,
-      "categories": ["White", "Enchantment", "Defense"],
+      "categories": [
+        "White",
+        "Enchantment",
+        "Defense"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-25-island-sanctuary.webp",
       "stock": 11
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Holy Strength",
       "price": 1.41,
-      "categories": ["White", "Enchantment", "Pump"],
+      "categories": [
+        "White",
+        "Enchantment",
+        "Pump"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-24-holy-strength.webp",
       "stock": 49
     },
-  
     {
-      "id": 14,
+      "id": "14",
       "title": "Mahamoti Djinn",
       "price": 42.28,
-      "categories": ["Blue", "Creature", "Flying"],
+      "categories": [
+        "Blue",
+        "Creature",
+        "Flying"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-66-mahamoti-djinn.webp",
       "stock": 9
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Serendib Efreet",
       "price": 46.08,
-      "categories": ["Blue", "Creature", "Flying"],
+      "categories": [
+        "Blue",
+        "Creature",
+        "Flying"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-79-serendib-efreet.webp",
       "stock": 13
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Phantom Monster",
       "price": 2.91,
-      "categories": ["Blue", "Creature", "Flying"],
+      "categories": [
+        "Blue",
+        "Creature",
+        "Flying"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-71-phantom-monster.webp",
       "stock": 28
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Braingeyser",
       "price": 169.83,
-      "categories": ["Blue", "Sorcery", "Card Draw"],
+      "categories": [
+        "Blue",
+        "Sorcery",
+        "Card Draw"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-50-braingeyser.webp",
       "stock": 5
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Hurkyl's Recall",
       "price": 22.99,
-      "categories": ["Blue", "Instant", "Artifact Hate"],
+      "categories": [
+        "Blue",
+        "Instant",
+        "Artifact Hate"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-60-hurkyl-s-recall.webp",
       "stock": 17
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Counterspell",
-      "price": 54.10,
-      "categories": ["Blue", "Instant", "Counter"],
+      "price": 54.1,
+      "categories": [
+        "Blue",
+        "Instant",
+        "Counter"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-54-counterspell.webp",
       "stock": 32
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Unsummon",
       "price": 1.91,
-      "categories": ["Blue", "Instant", "Removal"],
+      "categories": [
+        "Blue",
+        "Instant",
+        "Removal"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-87-unsummon.webp",
       "stock": 51
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Control Magic",
       "price": 8.94,
-      "categories": ["Blue", "Enchantment", "Control"],
+      "categories": [
+        "Blue",
+        "Enchantment",
+        "Control"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-52-control-magic.webp",
       "stock": 19
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Stasis",
       "price": 110.52,
-      "categories": ["Blue", "Enchantment", "Control"],
+      "categories": [
+        "Blue",
+        "Enchantment",
+        "Control"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-83-stasis.webp",
       "stock": 6
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Steal Artifact",
       "price": 3.21,
-      "categories": ["Blue", "Enchantment", "Control"],
+      "categories": [
+        "Blue",
+        "Enchantment",
+        "Control"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-84-steal-artifact.webp",
       "stock": 22
     },
-  
     {
-      "id": 24,
+      "id": "24",
       "title": "Hypnotic Specter",
       "price": 66.65,
-      "categories": ["Black", "Creature", "Flying", "Discard"],
+      "categories": [
+        "Black",
+        "Creature",
+        "Flying",
+        "Discard"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-115-hypnotic-specter.webp",
       "stock": 15
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Sengir Vampire",
       "price": 11.74,
-      "categories": ["Black", "Creature", "Flying"],
+      "categories": [
+        "Black",
+        "Creature",
+        "Flying"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-129-sengir-vampire.webp",
       "stock": 20
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Royal Assassin",
       "price": 166.27,
-      "categories": ["Black", "Creature", "Removal"],
+      "categories": [
+        "Black",
+        "Creature",
+        "Removal"
+      ],
       "onSale": true,
       "image": "src/assets/images/3ed-125-royal-assassin.webp",
       "stock": 7
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Demonic Tutor",
       "price": 659.18,
-      "categories": ["Black", "Sorcery", "Tutor"],
+      "categories": [
+        "Black",
+        "Sorcery",
+        "Tutor"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-105-demonic-tutor.webp",
       "stock": 4
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Mind Twist",
       "price": 70.79,
-      "categories": ["Black", "Sorcery", "Discard"],
+      "categories": [
+        "Black",
+        "Sorcery",
+        "Discard"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-117-mind-twist.webp",
       "stock": 9
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Raise Dead",
       "price": 2.51,
-      "categories": ["Black", "Sorcery", "Recursion"],
+      "categories": [
+        "Black",
+        "Sorcery",
+        "Recursion"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-124-raise-dead.webp",
       "stock": 43
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Terror",
       "price": 1.81,
-      "categories": ["Black", "Instant", "Removal"],
+      "categories": [
+        "Black",
+        "Instant",
+        "Removal"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-132-terror.webp",
       "stock": 38
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Dark Ritual",
       "price": 48.89,
-      "categories": ["Black", "Instant", "Mana"],
+      "categories": [
+        "Black",
+        "Instant",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-99-dark-ritual.webp",
       "stock": 26
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Sacrifice",
       "price": 61.74,
-      "categories": ["Black", "Instant", "Mana"],
+      "categories": [
+        "Black",
+        "Instant",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-126-sacrifice.webp",
       "stock": 12
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Bad Moon",
       "price": 97.18,
-      "categories": ["Black", "Enchantment", "Pump"],
+      "categories": [
+        "Black",
+        "Enchantment",
+        "Pump"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-94-bad-moon.webp",
       "stock": 8
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Pestilence",
       "price": 5.52,
-      "categories": ["Black", "Enchantment", "Damage"],
+      "categories": [
+        "Black",
+        "Enchantment",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-122-pestilence.webp",
       "stock": 24
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Unholy Strength",
       "price": 2.81,
-      "categories": ["Black", "Enchantment", "Pump"],
+      "categories": [
+        "Black",
+        "Enchantment",
+        "Pump"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-133-unholy-strength.webp",
       "stock": 46
     },
-  
     {
-      "id": 36,
+      "id": "36",
       "title": "Shivan Dragon",
       "price": 222.25,
-      "categories": ["Red", "Creature", "Flying", "Dragon"],
+      "categories": [
+        "Red",
+        "Creature",
+        "Flying",
+        "Dragon"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-177-shivan-dragon.webp",
       "stock": 5
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Goblin King",
       "price": 73.26,
-      "categories": ["Red", "Creature", "Goblin", "Lord"],
+      "categories": [
+        "Red",
+        "Creature",
+        "Goblin",
+        "Lord"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-155-goblin-king.webp",
       "stock": 14
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Dragon Whelp",
       "price": 4.32,
-      "categories": ["Red", "Creature", "Flying", "Dragon"],
+      "categories": [
+        "Red",
+        "Creature",
+        "Flying",
+        "Dragon"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-143-dragon-whelp.webp",
       "stock": 27
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Fireball",
       "price": 5.22,
-      "categories": ["Red", "Sorcery", "Damage"],
+      "categories": [
+        "Red",
+        "Sorcery",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-150-fireball.webp",
       "stock": 40
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "Earthquake",
       "price": 29.61,
-      "categories": ["Red", "Sorcery", "Damage"],
+      "categories": [
+        "Red",
+        "Sorcery",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-148-earthquake.webp",
       "stock": 18
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "Stone Rain",
       "price": 2.31,
-      "categories": ["Red", "Sorcery", "Land Destruction"],
+      "categories": [
+        "Red",
+        "Sorcery",
+        "Land Destruction"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-180-stone-rain.webp",
       "stock": 45
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Lightning Bolt",
       "price": 23.08,
-      "categories": ["Red", "Instant", "Damage"],
+      "categories": [
+        "Red",
+        "Instant",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-162-lightning-bolt.webp",
       "stock": 29
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "Red Elemental Blast",
       "price": 43.76,
-      "categories": ["Red", "Instant", "Counter", "Removal"],
+      "categories": [
+        "Red",
+        "Instant",
+        "Counter",
+        "Removal"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-171-red-elemental-blast.webp",
       "stock": 17
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Shatter",
       "price": 1.81,
-      "categories": ["Red", "Instant", "Artifact Hate"],
+      "categories": [
+        "Red",
+        "Instant",
+        "Artifact Hate"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-175-shatter.webp",
       "stock": 52
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "Mana Flare",
       "price": 35.54,
-      "categories": ["Red", "Enchantment", "Mana"],
+      "categories": [
+        "Red",
+        "Enchantment",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-164-mana-flare.webp",
       "stock": 13
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "Manabarbs",
       "price": 74.17,
-      "categories": ["Red", "Enchantment", "Damage"],
+      "categories": [
+        "Red",
+        "Enchantment",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-165-manabarbs.webp",
       "stock": 11
     },
     {
-      "id": 47,
+      "id": "47",
       "title": "Smoke",
       "price": 74.99,
-      "categories": ["Red", "Enchantment", "Control"],
+      "categories": [
+        "Red",
+        "Enchantment",
+        "Control"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-178-smoke.webp",
       "stock": 7
     },
-  
     {
-      "id": 48,
+      "id": "48",
       "title": "Birds of Paradise",
       "price": 287.79,
-      "categories": ["Green", "Creature", "Flying", "Mana"],
+      "categories": [
+        "Green",
+        "Creature",
+        "Flying",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-187-birds-of-paradise.webp",
       "stock": 6
     },
     {
-      "id": 49,
+      "id": "49",
       "title": "Force of Nature",
       "price": 45.87,
-      "categories": ["Green", "Creature", "Trample"],
+      "categories": [
+        "Green",
+        "Creature",
+        "Trample"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-196-force-of-nature.webp",
       "stock": 12
     },
     {
-      "id": 50,
+      "id": "50",
       "title": "Llanowar Elves",
       "price": 11.75,
-      "categories": ["Green", "Creature", "Mana"],
+      "categories": [
+        "Green",
+        "Creature",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-211-llanowar-elves.webp",
       "stock": 35
     },
     {
-      "id": 51,
+      "id": "51",
       "title": "Regrowth",
       "price": 16.97,
-      "categories": ["Green", "Sorcery", "Recursion"],
+      "categories": [
+        "Green",
+        "Sorcery",
+        "Recursion"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-214-regrowth.webp",
       "stock": 22
     },
     {
-      "id": 52,
+      "id": "52",
       "title": "Hurricane",
       "price": 8.64,
-      "categories": ["Green", "Sorcery", "Damage"],
+      "categories": [
+        "Green",
+        "Sorcery",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-202-hurricane.webp",
       "stock": 19
     },
     {
-      "id": 53,
+      "id": "53",
       "title": "Channel",
       "price": 7.13,
-      "categories": ["Green", "Sorcery", "Mana"],
+      "categories": [
+        "Green",
+        "Sorcery",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-188-channel.webp",
       "stock": 16
     },
     {
-      "id": 54,
+      "id": "54",
       "title": "Giant Growth",
       "price": 2.61,
-      "categories": ["Green", "Instant", "Pump"],
+      "categories": [
+        "Green",
+        "Instant",
+        "Pump"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-199-giant-growth.webp",
       "stock": 48
     },
     {
-      "id": 55,
+      "id": "55",
       "title": "Fog",
       "price": 2.91,
-      "categories": ["Green", "Instant", "Combat"],
+      "categories": [
+        "Green",
+        "Instant",
+        "Combat"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-195-fog.webp",
       "stock": 55
     },
     {
-      "id": 56,
+      "id": "56",
       "title": "Crumble",
       "price": 3.31,
-      "categories": ["Green", "Instant", "Artifact Hate"],
+      "categories": [
+        "Green",
+        "Instant",
+        "Artifact Hate"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-191-crumble.webp",
       "stock": 29
     },
     {
-      "id": 57,
+      "id": "57",
       "title": "Lure",
       "price": 3.81,
-      "categories": ["Green", "Enchantment", "Combat"],
+      "categories": [
+        "Green",
+        "Enchantment",
+        "Combat"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-212-lure.webp",
       "stock": 18
     },
     {
-      "id": 58,
+      "id": "58",
       "title": "Regeneration",
       "price": 2.81,
-      "categories": ["Green", "Enchantment", "Regeneration"],
+      "categories": [
+        "Green",
+        "Enchantment",
+        "Regeneration"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-213-regeneration.webp",
       "stock": 33
     },
     {
-      "id": 59,
+      "id": "59",
       "title": "Wild Growth",
       "price": 4.32,
-      "categories": ["Green", "Enchantment", "Mana"],
+      "categories": [
+        "Green",
+        "Enchantment",
+        "Mana"
+      ],
       "onSale": true,
       "image": "src/assets/images/3ed-230-wild-growth.webp",
       "stock": 21
     },
-  
     {
-      "id": 60,
+      "id": "60",
       "title": "Sol Ring",
       "price": 372.04,
-      "categories": ["Colorless", "Artifact", "Mana"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-274-sol-ring.webp",
       "stock": 8
     },
     {
-      "id": 61,
+      "id": "61",
       "title": "Mana Vault",
       "price": 1012.78,
-      "categories": ["Colorless", "Artifact", "Mana"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-263-mana-vault.webp",
       "stock": 3
     },
     {
-      "id": 62,
+      "id": "62",
       "title": "Nevinyrral's Disk",
       "price": 74.49,
-      "categories": ["Colorless", "Artifact", "Board Wipe"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Board Wipe"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-267-nevinyrral-s-disk.webp",
       "stock": 9
     },
     {
-      "id": 63,
+      "id": "63",
       "title": "Howling Mine",
       "price": 144.95,
-      "categories": ["Colorless", "Artifact", "Card Draw"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Card Draw"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-251-howling-mine.webp",
       "stock": 11
     },
     {
-      "id": 64,
+      "id": "64",
       "title": "The Rack",
       "price": 18.27,
-      "categories": ["Colorless", "Artifact", "Discard"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Discard"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-278-the-rack.webp",
       "stock": 26
     },
     {
-      "id": 65,
+      "id": "65",
       "title": "Winter Orb",
       "price": 218.49,
-      "categories": ["Colorless", "Artifact", "Control"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Control"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-280-winter-orb.webp",
       "stock": 7
     },
     {
-      "id": 66,
+      "id": "66",
       "title": "Millstone",
-      "price": 26.30,
-      "categories": ["Colorless", "Artifact", "Mill"],
+      "price": 26.3,
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Mill"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-265-millstone.webp",
       "stock": 17
     },
     {
-      "id": 67,
+      "id": "67",
       "title": "Basalt Monolith",
       "price": 61.44,
-      "categories": ["Colorless", "Artifact", "Mana"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Mana"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-235-basalt-monolith.webp",
       "stock": 14
     },
     {
-      "id": 68,
+      "id": "68",
       "title": "Jayemdae Tome",
       "price": 22.08,
-      "categories": ["Colorless", "Artifact", "Card Draw"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Card Draw"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-258-jayemdae-tome.webp",
       "stock": 19
     },
     {
-      "id": 69,
+      "id": "69",
       "title": "Black Vise",
       "price": 27.79,
-      "categories": ["Colorless", "Artifact", "Damage"],
+      "categories": [
+        "Colorless",
+        "Artifact",
+        "Damage"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-236-black-vise.webp",
       "stock": 24
     },
-  
     {
-      "id": 70,
+      "id": "70",
       "title": "Tropical Island",
       "price": 6027.33,
-      "categories": ["Land", "Dual Land", "Blue", "Green"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "Blue",
+        "Green"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-288-tropical-island.webp",
       "stock": 2
     },
     {
-      "id": 71,
+      "id": "71",
       "title": "Underground Sea",
       "price": 10849.49,
-      "categories": ["Land", "Dual Land", "Blue", "Black"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "Blue",
+        "Black"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-290-underground-sea.webp",
       "stock": 1
     },
     {
-      "id": 72,
+      "id": "72",
       "title": "Volcanic Island",
       "price": 9641.28,
-      "categories": ["Land", "Dual Land", "Blue", "Red"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "Blue",
+        "Red"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-291-volcanic-island.webp",
       "stock": 1
     },
     {
-      "id": 73,
+      "id": "73",
       "title": "Savannah",
       "price": 4141.61,
-      "categories": ["Land", "Dual Land", "White", "Green"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "White",
+        "Green"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-285-savannah.webp",
       "stock": 2
     },
     {
-      "id": 74,
+      "id": "74",
       "title": "Badlands",
       "price": 5888.04,
-      "categories": ["Land", "Dual Land", "Black", "Red"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "Black",
+        "Red"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-282-badlands.webp",
       "stock": 1
     },
     {
-      "id": 75,
+      "id": "75",
       "title": "Bayou",
       "price": 4967.42,
-      "categories": ["Land", "Dual Land", "Black", "Green"],
+      "categories": [
+        "Land",
+        "Dual Land",
+        "Black",
+        "Green"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-283-bayou.webp",
       "stock": 1
     },
     {
-      "id": 76,
+      "id": "76",
       "title": "Plains",
       "price": 4.01,
-      "categories": ["Land", "Basic Land", "White"],
+      "categories": [
+        "Land",
+        "Basic Land",
+        "White"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-292-plains.webp",
       "stock": 50
     },
     {
-      "id": 77,
+      "id": "77",
       "title": "Island",
       "price": 7.53,
-      "categories": ["Land", "Basic Land", "Blue"],
+      "categories": [
+        "Land",
+        "Basic Land",
+        "Blue"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-295-island.webp",
       "stock": 47
     },
     {
-      "id": 78,
+      "id": "78",
       "title": "Swamp",
       "price": 4.82,
-      "categories": ["Land", "Basic Land", "Black"],
+      "categories": [
+        "Land",
+        "Basic Land",
+        "Black"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-298-swamp.webp",
       "stock": 44
     },
     {
-      "id": 79,
+      "id": "79",
       "title": "Mountain",
       "price": 5.52,
-      "categories": ["Land", "Basic Land", "Red"],
+      "categories": [
+        "Land",
+        "Basic Land",
+        "Red"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-301-mountain.webp",
       "stock": 46
     },
     {
-      "id": 80,
+      "id": "80",
       "title": "Forest",
       "price": 3.81,
-      "categories": ["Land", "Basic Land", "Green"],
+      "categories": [
+        "Land",
+        "Basic Land",
+        "Green"
+      ],
       "onSale": false,
       "image": "src/assets/images/3ed-304-forest.webp",
       "stock": 48
     }
-  
   ],
-
-
-  
   "orders": [
-
+    {
+      "orderNumber": "ORD-1791361541450",
+      "items": [
+        {
+          "productId": "2",
+          "title": "Savannah Lions",
+          "quantity": 1,
+          "price": 75.8
+        },
+        {
+          "productId": "3",
+          "title": "White Knight",
+          "quantity": 1,
+          "price": 13.25
+        }
+      ],
+      "customer": {
+        "name": "asd",
+        "address": "asdasd"
+      },
+      "shipping": "Postnord",
+      "payment": "Kort",
+      "date": "2026-10-07T08:25:41.450Z",
+      "id": "ZDMqlYSZxuo"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
