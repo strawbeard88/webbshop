@@ -1,0 +1,15 @@
+.products-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #0f1116;
+    min-height: calc(100vh - 140px);
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
