@@ -12,9 +12,11 @@ export default function Header() {
     return (
        <header className="header">
            {title}
-           <div>
+           <div className="header-cart-wrapper">
                 {cart}
-                <p>{cartItemCount}</p>
+                {cartItemCount > 0 ? (
+                    <p className="header-cart-count">{cartItemCount}</p>
+                ) : null}
            </div>
        </header>
     )

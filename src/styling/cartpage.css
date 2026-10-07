@@ -1,5 +1,8 @@
 .cart-page {
-    padding: 16px;
+    padding: 20px;
+    background: #0f1116;
+    min-height: calc(100vh - 140px);
+    color: #eef1f6;
 }
 
 .cart-list {
@@ -13,9 +16,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #303440;
+    border-radius: 10px;
+    background: #1a1d25;
 }
 
 .cart-row-image {
@@ -38,11 +42,12 @@
 
 .cart-link-button {
     display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid #444;
-    border-radius: 6px;
+    padding: 8px 12px;
+    border: 1px solid #454b59;
+    border-radius: 8px;
     text-decoration: none;
-    color: inherit;
+    color: #eef1f6;
+    background: #171a21;
 }
 
 .cart-row-price {
